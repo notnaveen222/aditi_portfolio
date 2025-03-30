@@ -1,0 +1,62 @@
+body {
+  background-color: black;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.position {
+  border-bottom: 1px solid #fd06b5;
+  padding-bottom: 5px;
+}
+
+.image-container {
+  display: inline-block;
+}
+
+.image {
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0px 20px #fd06b5;
+}
+
+.name-text {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.pink-text-color {
+  color: #fd06b5;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  height: 40px;
+}
+
+.description-text {
+  color: #f7f7f7;
+  width: 30%;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .description-text {
+    color: #f7f7f7;
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,74 @@
+.assignmentContainer {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Leave Letter */
+.leaveLetter {
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content {
+  text-align: justify;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Table Layout */
+.tableSection {
+  margin: 30px 0;
+}
+
+.customTable {
+  border-collapse: collapse;
+  margin: auto;
+  width: 50%;
+}
+
+.customTable td {
+  border: 3px solid black;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Chess Board */
+.chessBoard {
+  border-collapse: collapse;
+  width: 300px;
+  height: 400px;
+  font-size: 24px;
+  margin: auto;
+  color: #000;
+}
+
+.dark {
+  background-color: teal;
+}
+
+.light {
+  background-color: white;
+}

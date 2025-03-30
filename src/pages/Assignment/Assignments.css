@@ -1,0 +1,25 @@
+.assignment-button {
+  border: 1px solid white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: all 200ms ease-in-out;
+  color: white;
+}
+
+.assignment-button:hover {
+  background-color: #fd06b5;
+  border: 1px solid black;
+  scale: 1.1;
+}
+
+.assignment-title {
+  font-size: 30px;
+  border-bottom: 1px solid #fd06b5;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.assignment-list {
+  display: flex;
+  gap: 20px;
+}
