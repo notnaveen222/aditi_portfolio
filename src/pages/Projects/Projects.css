@@ -1,0 +1,22 @@
+.projects-container {
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.proj-title {
+  border-bottom: #fd06b5 solid 1px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.proj-heading {
+  border-bottom: 1px solid white;
+  border-radius: 1px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 5px;
+}

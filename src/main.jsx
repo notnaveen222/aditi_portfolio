@@ -11,6 +11,10 @@ import Assignment4 from "./pages/Assignment/Assignment4.jsx";
 import Assignment5 from "./pages/Assignment/Assignment5.jsx";
 import Assignment6 from "./pages/Assignment/Assignment6.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import FlappyBird from "./pages/Projects/FlappyBird/FlappyBird.jsx";
+import Typingtest from "./pages/Projects/TypingTest/Typingtest.jsx";
+import Dictionary from "./pages/Projects/DictionaryApp/Dictionary.jsx";
+import Visualiser from "./pages/Projects/Visualiser/Visualiser.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -22,6 +26,10 @@ const router = createBrowserRouter([
   { path: "/assignment5", element: <Assignment5 /> },
   { path: "/assignment6", element: <Assignment6 /> },
   { path: "/projects", element: <Projects /> },
+  { path: "/flappybird", element: <FlappyBird /> },
+  { path: "/typingtest", element: <Typingtest /> },
+  { path: "/dictionary", element: <Dictionary /> },
+  { path: "/visualiser", element: <Visualiser /> },
 ]);
 
 createRoot(document.getElementById("root")).render(

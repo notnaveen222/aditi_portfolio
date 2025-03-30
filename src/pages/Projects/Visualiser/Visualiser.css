@@ -1,0 +1,14 @@
+.visualiser-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+audio {
+  margin-bottom: 20px;
+}
+
+canvas {
+  border: 1px solid #ccc;
+}

@@ -1,0 +1,136 @@
+.dictionary-container {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.dictionary-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #3367d6;
+}
+
+.search-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.loading-text {
+  text-align: center;
+  color: #666;
+}
+
+.error-message {
+  color: #d32f2f;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #d32f2f;
+  border-radius: 4px;
+  background-color: #ffebee;
+}
+
+.results-container {
+  margin-top: 20px;
+}
+
+.word-heading {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.phonetic {
+  color: #666;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.audio-container {
+  margin: 10px 0;
+}
+
+.audio-player {
+  width: 100%;
+}
+
+.meaning-container {
+  margin: 20px 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.meaning-container:last-child {
+  border-bottom: none;
+}
+
+.part-of-speech {
+  color: #4285f4;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.definitions-list {
+  padding-left: 20px;
+}
+
+.definition-item {
+  margin-bottom: 15px;
+}
+
+.definition-text {
+  margin-bottom: 5px;
+}
+
+.example-text {
+  color: #666;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.synonyms-container {
+  margin-top: 10px;
+}
+
+.synonyms-heading {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+.synonyms-text {
+  color: #4285f4;
+}
