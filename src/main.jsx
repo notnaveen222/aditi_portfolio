@@ -14,7 +14,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import FlappyBird from "./pages/Projects/FlappyBird/FlappyBird.jsx";
 import Typingtest from "./pages/Projects/TypingTest/Typingtest.jsx";
 import Dictionary from "./pages/Projects/DictionaryApp/Dictionary.jsx";
-import Visualiser from "./pages/Projects/Visualiser/Visualiser.jsx";
 import QRCodeGenerator from "./pages/Projects/QRGen/QRCodeGenerator.jsx";
 import ImageToPDF from "./pages/Projects/imgToPdf/ImageToPDF.jsx";
 
@@ -31,7 +30,6 @@ const router = createBrowserRouter([
   { path: "/flappybird", element: <FlappyBird /> },
   { path: "/typingtest", element: <Typingtest /> },
   { path: "/dictionary", element: <Dictionary /> },
-  { path: "/visualiser", element: <Visualiser /> },
   { path: "/qrgenerator", element: <QRCodeGenerator /> },
   { path: "/imgtopdf", element: <ImageToPDF /> },
 ]);
