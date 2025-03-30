@@ -1,0 +1,107 @@
+.assignmentContainer {
+  font-family: Arial, sans-serif;
+  background-color: pink;
+  padding: 20px;
+}
+
+/* Bakery Website */
+.bakery {
+  text-align: center;
+}
+
+.header {
+  background-color: hotpink;
+  color: white;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.header nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 50px 20px;
+  background-image: url("https://images.unsplash.com/photo-1603808033192-44d24f6f782d");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 250px;
+  text-align: center;
+  margin: 20px;
+}
+
+.product img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: hotpink;
+  color: white;
+  padding: 20px;
+}
+
+.catAnimation {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.road {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://st3.depositphotos.com/1719108/33411/i/450/depositphotos_334111716-stock-illustration-cartoon-summer-scene-with-meadow.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cat {
+  position: absolute;
+  bottom: 10%;
+  right: -300px;
+  width: 150px;
+  height: auto;
+  animation: run 5s linear infinite;
+}
+
+@keyframes run {
+  0% {
+    right: -300px;
+  }
+  50% {
+    right: 50%;
+    transform: translateX(50%);
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+.container {
+  border: 2px solid black;
+  padding: 20px;
+  font-size: 20px;
+  background-color: rgba(255, 99, 71, 0.5);
+}
