@@ -9,8 +9,8 @@ export default function FlappyBird() {
   const [gameStarted, setGameStarted] = useState(false);
   const gameRef = useRef({
     bird: {
-      x: 50,
-      y: 200,
+      x: 100,
+      y: 150,
       width: 30,
       height: 30,
       velocity: 0,
@@ -22,10 +22,11 @@ export default function FlappyBird() {
     animationId: null,
   });
 
-  const GAP_HEIGHT = 175;
+  // Adjusted for landscape mode
+  const GAP_HEIGHT = 150;
   const PIPE_WIDTH = 30;
-  const PIPE_SPEED = 2;
-  const PIPE_SPAWN_RATE = 2000;
+  const PIPE_SPEED = 2.5;
+  const PIPE_SPAWN_RATE = 1800; // Slightly faster pipe spawning for landscape
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -173,8 +174,8 @@ export default function FlappyBird() {
 
     const resetGame = () => {
       game.bird = {
-        x: 50,
-        y: 200,
+        x: 100,
+        y: 150,
         width: 30,
         height: 30,
         velocity: 0,
@@ -201,7 +202,7 @@ export default function FlappyBird() {
     <div className="container">
       <h1 className="title">Flappy Bird</h1>
       <div className="gameContainer">
-        <canvas ref={canvasRef} width={400} height={600} className="canvas" />
+        <canvas ref={canvasRef} width={800} height={400} className="canvas" />
         <div className="scoreContainer">
           <span className="scoreLabel">Score:</span>
           <span className="scoreValue">{score}</span>
