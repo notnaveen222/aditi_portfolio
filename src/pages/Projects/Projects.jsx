@@ -17,10 +17,12 @@ const Projects = () => {
         <Link to={"/flappybird"} className="proj-heading">
           Flappy Bird
         </Link>
-        <Link to={"/visualiser"} className="proj-heading">
-          Music Visualiser
+        <Link to={"/qrgenerator"} className="proj-heading">
+          QR Code Generator
         </Link>
-        <Link className="proj-heading">Project 5</Link>
+        <Link to={"/imgtopdf"} className="proj-heading">
+          Image to PDF
+        </Link>
       </div>
     </div>
   );

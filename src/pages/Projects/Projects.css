@@ -11,12 +11,36 @@
   border-bottom: #fd06b5 solid 1px;
   margin-bottom: 10px;
   font-size: 30px;
+  transition: all 150ms ease-in-out;
 }
+
 .proj-heading {
-  border-bottom: 1px solid white;
-  border-radius: 1px;
+  position: relative;
   font-size: 20px;
   cursor: pointer;
   padding: 5px;
   margin-bottom: 5px;
+  text-decoration: none;
+  color: white;
+  transition: color 150ms ease-in-out;
+}
+
+.proj-heading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #fd06b5;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.proj-heading:hover {
+  color: #fd06b5;
+}
+
+.proj-heading:hover::after {
+  width: 100%;
 }

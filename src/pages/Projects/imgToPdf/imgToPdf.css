@@ -1,0 +1,122 @@
+.external-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-to-pdf-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #000;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(253, 6, 181, 0.3);
+}
+
+.title {
+  color: #fd06b5;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.upload-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #000;
+  color: #fd06b5;
+  border: 2px solid #fd06b5;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: rgba(253, 6, 181, 0.2);
+}
+
+.upload-button input {
+  display: none;
+}
+
+.convert-button {
+  padding: 12px 24px;
+  background-color: #fd06b5;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.convert-button:hover {
+  background-color: #ff2cc4;
+}
+
+.convert-button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.preview-container {
+  margin-top: 30px;
+}
+
+.preview-container h2 {
+  color: #fd06b5;
+  margin-bottom: 15px;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.preview-item {
+  position: relative;
+  border: 2px solid #fd06b5;
+  border-radius: 6px;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.preview-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.remove-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: #fd06b5;
+  border: 2px solid #fd06b5;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.remove-button:hover {
+  opacity: 1;
+}
