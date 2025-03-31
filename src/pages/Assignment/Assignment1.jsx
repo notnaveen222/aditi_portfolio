@@ -1,22 +1,24 @@
 import React from "react";
-import styles from "./assignment1.module.css";
+import "./assignment1.css";
 
 const Assignment1 = () => {
   return (
-    <div className={styles.assignmentContainer}>
-      {/* Leave Letter Section */}
-      <section className={styles.leaveLetter}>
-        <h1 className={styles.header}>Leave Letter</h1>
-        <div className={styles.content}>
+    <div className="a1-container">
+      <h1 className="a1-title">Assignment 1</h1>
+
+      {/* Leave Letter */}
+      <section className="a1-section">
+        <h2 className="a1-heading">Leave Letter</h2>
+        <div className="a1-letter">
           <p>
-            <b>From:</b>
+            From,
             <br />
             Aditi Babu
             <br />
             VIT Chennai
           </p>
           <p>
-            <b>To:</b>
+            To,
             <br />
             Dr. Ashoka Rajan
             <br />
@@ -32,30 +34,25 @@ const Assignment1 = () => {
             during this period. It is a significant occasion for my family, and
             my presence is essential.
           </p>
-          <p>
-            I kindly request your understanding and approval for this leave. I
-            assure you that I will make up for any missed work and lessons
-            during my absence.
-          </p>
           <p>Thank you for your consideration.</p>
           <p>
             Yours sincerely,
             <br />
             Aditi
           </p>
-        </div>
-        <div className={styles.image}>
-          <img
-            src="https://shaadiwish.com/blog/wp-content/uploads/2020/05/coordinated-family-portraits.jpg"
-            alt="Family Wedding"
-          />
+          <div className="a1-image">
+            <img
+              src="https://shaadiwish.com/blog/wp-content/uploads/2020/05/coordinated-family-portraits.jpg"
+              alt="Family Wedding"
+            />
+          </div>
         </div>
       </section>
 
       {/* Table Layout */}
-      <section className={styles.tableSection}>
-        <h2>Table Layout</h2>
-        <table className={styles.customTable}>
+      <section className="a1-section">
+        <h2 className="a1-heading">Table Layout</h2>
+        <table className="a1-table">
           <tbody>
             <tr>
               <td rowSpan="2">A</td>
@@ -83,94 +80,89 @@ const Assignment1 = () => {
       </section>
 
       {/* Chess Board */}
-      <section className={styles.chessBoardSection}>
-        <h2>Chess Board</h2>
-        <table
-          className={styles.chessBoard}
-          border="2"
-          cellspacing="0"
-          cellpadding="20"
-        >
+      <section className="a1-section">
+        <h2 className="a1-heading">Chess Board</h2>
+        <table className="a1-chessboard">
           <tbody>
             <tr>
-              <td className={styles.dark}>♜</td>
-              <td className={styles.light}>♞</td>
-              <td className={styles.dark}>♝</td>
-              <td className={styles.light}>♛</td>
-              <td className={styles.dark}>♚</td>
-              <td className={styles.light}>♝</td>
-              <td className={styles.dark}>♞</td>
-              <td className={styles.light}>♜</td>
+              <td>♜</td>
+              <td>♞</td>
+              <td>♝</td>
+              <td>♛</td>
+              <td>♚</td>
+              <td>♝</td>
+              <td>♞</td>
+              <td>♜</td>
             </tr>
             <tr>
-              <td className={styles.light}>♟</td>
-              <td className={styles.dark}>♟</td>
-              <td className={styles.light}>♟</td>
-              <td className={styles.dark}>♟</td>
-              <td className={styles.light}>♟</td>
-              <td className={styles.dark}>♟</td>
-              <td className={styles.light}>♟</td>
-              <td className={styles.dark}>♟</td>
+              <td>♟</td>
+              <td>♟</td>
+              <td>♟</td>
+              <td>♟</td>
+              <td>♟</td>
+              <td>♟</td>
+              <td>♟</td>
+              <td>♟</td>
             </tr>
             <tr>
-              <td className={styles.dark}>&nbsp;</td>
-              <td className={styles.light}></td>
-              <td className={styles.dark}></td>
-              <td className={styles.light}></td>
-              <td className={styles.dark}></td>
-              <td className={styles.light}></td>
-              <td className={styles.dark}></td>
-              <td className={styles.light}></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
-              <td className={styles.light}>&nbsp;</td>
-              <td className={styles.dark}></td>
-              <td className={styles.light}></td>
-              <td className={styles.dark}></td>
-              <td className={styles.light}></td>
-              <td className={styles.dark}></td>
-              <td className={styles.light}></td>
-              <td className={styles.dark}></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
-              <td className={styles.dark}>&nbsp;</td>
-              <td className={styles.light}></td>
-              <td className={styles.dark}></td>
-              <td className={styles.light}></td>
-              <td className={styles.dark}></td>
-              <td className={styles.light}></td>
-              <td className={styles.dark}></td>
-              <td className={styles.light}></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
-              <td className={styles.light}>&nbsp;</td>
-              <td className={styles.dark}></td>
-              <td className={styles.light}></td>
-              <td className={styles.dark}></td>
-              <td className={styles.light}></td>
-              <td className={styles.dark}></td>
-              <td className={styles.light}></td>
-              <td className={styles.dark}></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
-              <td className={styles.dark}>♙</td>
-              <td className={styles.light}>♙</td>
-              <td className={styles.dark}>♙</td>
-              <td className={styles.light}>♙</td>
-              <td className={styles.dark}>♙</td>
-              <td className={styles.light}>♙</td>
-              <td className={styles.dark}>♙</td>
-              <td className={styles.light}>♙</td>
+              <td>♙</td>
+              <td>♙</td>
+              <td>♙</td>
+              <td>♙</td>
+              <td>♙</td>
+              <td>♙</td>
+              <td>♙</td>
+              <td>♙</td>
             </tr>
             <tr>
-              <td className={styles.light}>♖</td>
-              <td className={styles.dark}>♘</td>
-              <td className={styles.light}>♗</td>
-              <td className={styles.dark}>♕</td>
-              <td className={styles.light}>♔</td>
-              <td className={styles.dark}>♗</td>
-              <td className={styles.light}>♘</td>
-              <td className={styles.dark}>♖</td>
+              <td>♖</td>
+              <td>♘</td>
+              <td>♗</td>
+              <td>♕</td>
+              <td>♔</td>
+              <td>♗</td>
+              <td>♘</td>
+              <td>♖</td>
             </tr>
           </tbody>
         </table>

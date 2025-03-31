@@ -1,0 +1,71 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.a1-container {
+  max-width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+.a1-title {
+  color: #fd06b5;
+  font-size: 40px;
+}
+
+.a1-section {
+  margin: 40px 0;
+  border-bottom: 2px solid #fd06b5;
+  padding-bottom: 20px;
+}
+
+.a1-heading {
+  color: #fd06b5;
+  font-size: 30px;
+}
+
+.a1-letter {
+  background-color: #222;
+  padding: 20px;
+  padding-left: 100px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #fd06b5;
+}
+
+.a1-image img {
+  max-width: 80%;
+  height: auto;
+  margin-left: 200px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #fd06b5;
+}
+
+.a1-table,
+.a1-chessboard {
+  border-collapse: collapse;
+  margin: auto;
+  width: 60%;
+  background-color: #222;
+}
+
+.a1-table td,
+.a1-chessboard td {
+  border: 2px solid #fd06b5;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.a1-chessboard tr:nth-child(even) td:nth-child(odd),
+.a1-chessboard tr:nth-child(odd) td:nth-child(even) {
+  background-color: #444;
+}
+
+.a1-chessboard tr:nth-child(even) td:nth-child(even),
+.a1-chessboard tr:nth-child(odd) td:nth-child(odd) {
+  background-color: black;
+}

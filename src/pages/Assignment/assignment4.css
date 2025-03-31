@@ -1,0 +1,202 @@
+/* General container */
+.a4-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Add spacing between titles and content */
+h2 {
+  margin-bottom: 100px;
+}
+
+/* Q1 - Rotating and Moving Square */
+.q1-square {
+  background-color: rgb(123, 199, 10);
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: q1-anim 5s linear;
+}
+@keyframes q1-anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: translate(500px, 0) rotate(0deg);
+  }
+  55% {
+    transform: translate(500px, 0) rotate(0deg);
+  }
+  70% {
+    background-color: aqua;
+    transform: translate(500px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-360deg);
+  }
+}
+
+/* Q2 - Infinite Circular Rotation on Square Path */
+.q2-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+.q2-moving-circle {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: q2-moveSquare 4s linear infinite,
+    q2-rotateCircle 2s linear infinite;
+}
+@keyframes q2-moveSquare {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 150px;
+  }
+  50% {
+    top: 150px;
+    left: 150px;
+  }
+  75% {
+    top: 150px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes q2-rotateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Q3 - Rotated Set of Squares */
+.q3-container {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  margin-left: 800px;
+}
+.q3-container > div {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+}
+.q3-square1 {
+  transform: rotate(5deg);
+}
+.q3-square2 {
+  transform: rotate(0deg);
+}
+.q3-square3 {
+  transform: rotate(2.5deg);
+}
+.q3-square4 {
+  transform: rotate(330deg);
+}
+.q3-square5 {
+  transform: rotate(332.5deg);
+}
+.q3-square6 {
+  transform: rotate(335deg);
+}
+.q3-square7 {
+  transform: rotate(30deg);
+}
+.q3-square8 {
+  transform: rotate(32.5deg);
+}
+.q3-square9 {
+  transform: rotate(35deg);
+}
+.q3-square10 {
+  transform: rotate(37.5deg);
+}
+
+/* Q4 - Web Programming Layout */
+.q4-layout {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+.q4-layout header {
+  background-color: #ff6347;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 24px;
+}
+.q4-layout nav {
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px 0;
+}
+.q4-layout nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.q4-layout nav ul li {
+  margin: 0 15px;
+}
+.q4-layout nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.q4-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  padding: 20px;
+}
+.q4-main {
+  background-color: #32cd32;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+}
+.q4-sidebar {
+  background-color: #ffa500;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+}
+.q4-article {
+  background-color: #9370db;
+  padding: 20px;
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.q4-layout footer {
+  background-color: #2f4f4f;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}

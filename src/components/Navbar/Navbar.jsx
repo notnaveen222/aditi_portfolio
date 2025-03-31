@@ -14,9 +14,6 @@ const Navbar = () => {
       <Link to={"/projects"} class="navbar-button">
         Projects
       </Link>
-      <Link to={"/"} class="navbar-button">
-        Contact
-      </Link>
     </div>
   );
 };

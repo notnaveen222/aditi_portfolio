@@ -1,0 +1,165 @@
+/* General Container */
+.a2-container {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Header */
+.a2-header {
+  background-color: #fd06b5;
+  padding: 20px;
+  text-align: center;
+}
+
+.a2-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.a2-header nav {
+  margin-top: 10px;
+}
+
+.a2-header nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.a2-hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #1a1a1a;
+}
+
+/* Product Section */
+.a2-section {
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.a2-products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.a2-product {
+  width: 250px;
+  text-align: center;
+  margin: 20px;
+}
+
+.a2-product img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Footer */
+.a2-footer {
+  background-color: #fd06b5;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Running Cat Animation */
+.a2-road {
+  position: relative;
+  height: 100vh;
+  background-image: url("https://st3.depositphotos.com/1719108/33411/i/450/depositphotos_334111716-stock-illustration-cartoon-summer-scene-with-meadow.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0px 200px;
+}
+
+.a2-cat {
+  position: absolute;
+  bottom: 10px;
+  right: -300px;
+  width: 350px;
+  animation: a2-run 5s linear infinite;
+}
+
+@keyframes a2-run {
+  0% {
+    right: -300px;
+  }
+  50% {
+    right: 50%;
+    transform: translateX(50%);
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+/* Form Section */
+.a2-form-container {
+  background-color: rgba(255, 99, 71, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.a2-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Ensuring All Inputs Are Aligned Properly */
+.a2-form-container label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.a2-form-container input,
+.a2-form-container textarea,
+.a2-form-container select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Checkboxes & Radio Buttons Alignment */
+.a2-checkbox-group,
+.a2-radio-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.a2-checkbox-group label,
+.a2-radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Button Alignment */
+.a2-btn-group {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.a2-btn-group input,
+.a2-btn-group button {
+  background-color: #fd06b5;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
